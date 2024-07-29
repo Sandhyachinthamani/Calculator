@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="calculator-solid.svg"/>
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+    <div class="calculator">
+        <input type="text" id="display" readonly/>
+        <div id="button-container">
+            <button id="button" onclick="calcdisplay=''; 
+            document.querySelector('#display').value = calcdisplay;">c</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '1'; 
+            document.querySelector('#display').value = calcdisplay;">1</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '2'; 
+            document.querySelector('#display').value = calcdisplay;">2</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '+'; 
+            document.querySelector('#display').value = calcdisplay;">+</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '3'; 
+            document.querySelector('#display').value = calcdisplay;">3</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '4'; 
+            document.querySelector('#display').value = calcdisplay;">4</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '-'; 
+            document.querySelector('#display').value = calcdisplay;">-</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '5'; 
+            document.querySelector('#display').value = calcdisplay;">5</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '6'; 
+            document.querySelector('#display').value = calcdisplay;">6</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '*'; 
+            document.querySelector('#display').value = calcdisplay;">*</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '7'; 
+            document.querySelector('#display').value = calcdisplay;">7</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '8'; 
+            document.querySelector('#display').value = calcdisplay;">8</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '/'; 
+            document.querySelector('#display').value = calcdisplay;">/</button>
+
+            <button id="button" onclick="if(calcdisplay!='')
+                                            calcdisplay=eval(calcdisplay); 
+                                         else calcdisplay=0;
+            document.querySelector('#display').value = calcdisplay;">=</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '9'; 
+            document.querySelector('#display').value = calcdisplay;">9</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '0'; 
+            document.querySelector('#display').value = calcdisplay;">0</button>
+
+            <button id="button" onclick="calcdisplay=calcdisplay+ '.'; 
+            document.querySelector('#display').value = calcdisplay;">.</button>
+        </div>
+    </div>
+    </main>
+    <script>
+        let calcdisplay='';
+        document.querySelector("#display").value=calcdisplay;
+    </script>
+</body>
+</html>
